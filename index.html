@@ -1,448 +1,110 @@
 
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101216">
-  <meta name="description" content="فروشگاه تخصصی لوازم خودرو، قطعات یدکی و تجهیزات جانبی خودرو">
-  <title>AUTO LUXE | فروشگاه تخصصی لوازم خودرو</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOIRÉ - An unforgettable luxury dining experience.">
+    <title>NOIRÉ | Luxury Restaurant</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/sport.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-<!-- AUTO LUXE Intro Screen -->
-<div class="intro-screen" id="introScreen">
-  <div class="intro-red-glow"></div>
 
-  <div class="intro-content">
-    <div class="intro-logo">
-      AUTO <span>LUXE</span>
-    </div>
-
-    <div class="intro-line"></div>
-
-    <p class="intro-kicker">PREMIUM AUTOMOTIVE EXPERIENCE</p>
-
-    <h1>قدرت را متفاوت تجربه کن</h1>
-
-    <p class="intro-description">
-      دنیای لوازم جانبی خودرو، با استانداردی فراتر از انتظار
-    </p>
-
-    <div class="intro-loading">
-      <span></span>
-    </div>
-
-    <p class="intro-entering">در حال ورود به فروشگاه...</p>
-  </div>
-
-  <div class="intro-bottom">
-    <span>AUTO LUXE</span>
-    <span>DRIVE YOUR STYLE</span>
-  </div>
-</div>
-
-
-
-  <div class="topbar">
-  <span data-fa="🚚 ارسال سریع سفارش‌ها به سراسر کشور" data-en="🚚 Fast delivery nationwide">
-    🚚 ارسال سریع سفارش‌ها به سراسر کشور
-  </span>
-
-  <span data-fa="پشتیبانی تخصصی خودرو | هر روز ۹ تا ۲۱" data-en="Auto support | Daily 9 AM – 9 PM">
-    پشتیبانی تخصصی خودرو | هر روز ۹ تا ۲۱
-  </span>
-
-  
-</div>
-
-
-  <header class="header">
-    <a class="logo" href="#home">
-      <span class="logo-icon">A<span>✦</span></span>
-      <span>AUTO <b>LUXE</b><small>PREMIUM AUTO STORE</small></span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
-
-   
-<nav class="nav" id="nav">
-  <a href="#home" data-fa="صفحه اصلی" data-en="Home">صفحه اصلی</a>
-  <a href="#categories" data-fa="دسته‌بندی‌ها" data-en="Categories">دسته‌بندی‌ها</a>
-  <a href="#products" data-fa="محصولات" data-en="Products">محصولات</a>
-  <a href="#services" data-fa="خدمات ما" data-en="Our Services">خدمات ما</a>
-</nav>
-
-
-  
-<div class="header-actions">
-  <button class="icon-btn" id="searchToggle" type="button" aria-label="جستجو">⌕</button>
-
-  <button class="language-btn" id="languageToggle" type="button" onclick="toggleLanguage()">EN</button>
-
-  <button class="icon-btn cart-trigger" id="cartToggle" type="button" aria-label="سبد خرید">
-    🛒 <span class="cart-count" id="cartCount">0</span>
-  </button>
-</div>
-</header>
-
-
-  <div class="search-panel" id="searchPanel">
-  <input id="searchInput" type="search"
-    data-fa-placeholder="نام محصول، قطعه یا لوازم خودرو را وارد کنید..."
-    data-en-placeholder="Enter product name, part or car accessory..."
-    placeholder="نام محصول، قطعه یا لوازم خودرو را وارد کنید...">
-
-  <button id="searchButton"
-    data-fa="جستجو"
-    data-en="Search">جستجو</button>
-</div>
-
-  <main>
-   
-<section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <span class="eyebrow" data-fa="تجربه‌ای متفاوت در خرید لوازم خودرو" data-en="A different automotive shopping experience"><i></i> تجربه‌ای متفاوت در خرید لوازم خودرو</span>
-
-    <h1 data-fa="برای خودروی تو،<br>فقط <span>بهترین‌ها</span>" data-en="For your car,<br>only <span>the best</span>">برای خودروی تو،<br>فقط <span>بهترین‌ها</span></h1>
-
-    <p data-fa="از قطعات تخصصی تا جذاب‌ترین لوازم جانبی؛ کیفیتی که می‌توانی به آن اعتماد کنی." data-en="From specialist parts to stylish accessories; quality you can trust.">
-      از قطعات تخصصی تا جذاب‌ترین لوازم جانبی؛
-      کیفیتی که می‌توانی به آن اعتماد کنی.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#products" class="btn btn-red">
-        <span data-fa="مشاهده محصولات" data-en="Explore Products">مشاهده محصولات</span>
-        <span>←</span>
-      </a>
-      <a href="#categories" class="btn btn-outline" data-fa="دسته‌بندی‌ها" data-en="Categories">دسته‌بندی‌ها</a>
-    </div>
-
-    <div class="hero-stats">
-      <div><strong>+۲۵۰۰</strong><small data-fa="محصول متنوع" data-en="Products">محصول متنوع</small></div>
-      <div><strong>+۱۲۰۰</strong><small data-fa="مشتری راضی" data-en="Happy Customers">مشتری راضی</small></div>
-      <div><strong>۲۴/۷</strong><small data-fa="پشتیبانی آنلاین" data-en="Online Support">پشتیبانی آنلاین</small></div>
-    </div>
-  </div>
-
-  <div class="hero-badge">
-    <span>PREMIUM</span>
-    <strong data-fa="کیفیت، اولویت ماست" data-en="Quality Comes First">کیفیت، اولویت ماست</strong>
-    <small data-fa="انتخاب هوشمندانه برای خودرو" data-en="The Smart Choice for Your Car">انتخاب هوشمندانه برای خودرو</small>
-  </div>
-
-  <div class="hero-decoration">AUTO LUXE</div>
-</section>
-
-
-   
-<section class="benefits">
-  <div class="benefit">
-    <span>🚚</span>
-    <div>
-      <strong data-fa="ارسال سریع" data-en="Fast Delivery">ارسال سریع</strong>
-      <small data-fa="تحویل مطمئن سفارش" data-en="Reliable Order Delivery">تحویل مطمئن سفارش</small>
-    </div>
-  </div>
-
-  <div class="benefit">
-    <span>🛡️</span>
-    <div>
-      <strong data-fa="ضمانت اصالت" data-en="Authenticity Guarantee">ضمانت اصالت</strong>
-      <small data-fa="خرید با اطمینان" data-en="Shop with Confidence">خرید با اطمینان</small>
-    </div>
-  </div>
-
-  <div class="benefit">
-    <span>⚙️</span>
-    <div>
-      <strong data-fa="کیفیت تخصصی" data-en="Premium Quality">کیفیت تخصصی</strong>
-      <small data-fa="انتخاب دقیق قطعات" data-en="Carefully Selected Parts">انتخاب دقیق قطعات</small>
-    </div>
-  </div>
-
-  <div class="benefit">
-    <span>☎</span>
-    <div>
-      <strong data-fa="مشاوره خرید" data-en="Expert Advice">مشاوره خرید</strong>
-      <small data-fa="راهنمایی پیش از سفارش" data-en="Guidance Before Ordering">راهنمایی پیش از سفارش</small>
-    </div>
-  </div>
-</section>
-
-    
-<section class="section" id="categories">
-  <div class="section-heading">
-    <div>
-      <span class="section-kicker">EXPLORE CATEGORIES</span>
-      <h2><span data-fa="دسته‌بندی" data-en="Product">دسته‌بندی</span> <span data-fa="محصولات" data-en="Categories">محصولات</span></h2>
-    </div>
-    <p data-fa="هر چیزی که خودروی تو نیاز دارد، اینجاست." data-en="Everything your car needs, all in one place.">هر چیزی که خودروی تو نیاز دارد، اینجاست.</p>
-  </div>
-
-  <div class="category-grid">
-    <button class="category-card" data-category="لوازم جانبی">
-     <div class="category-icon">
-  <img src="images/category-accessories.png" alt="Accessories">
-</div>
-      <h3 data-fa="لوازم جانبی" data-en="Accessories">لوازم جانبی</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-
-    <button class="category-card" data-category="قطعات یدکی">
-      <div class="category-icon">
-  <img src="images/category-spare-parts.png" alt="Spare Parts">
-</div>
-      <h3 data-fa="قطعات یدکی" data-en="Spare Parts">قطعات یدکی</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-
-    <button class="category-card" data-category="روغن و نگهداری">
-      <div class="category-icon">
-  <img src="images/category-oil-filters.png" alt="Oil & Filters">
-</div>
-      <h3 data-fa="روغن و نگهداری" data-en="Oil & Maintenance">روغن و نگهداری</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-
-    <button class="category-card" data-category="تجهیزات الکترونیکی">
-      <div class="category-icon">
-  <img src="images/category-electronics.png" alt="Electronics">
-</div>
-      <h3 data-fa="تجهیزات الکترونیکی" data-en="Electronics">تجهیزات الکترونیکی</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-
-    <button class="category-card" data-category="روشنایی خودرو">
-     <div class="category-icon">
-  <img src="images/category-lighting.png" alt="Car Lighting">
-</div>
-      <h3 data-fa="روشنایی خودرو" data-en="Car Lighting">روشنایی خودرو</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-
-    <button class="category-card" data-category="ایمنی خودرو">
-<div class="category-icon">
-  <img src="images/category-safety.png" alt="Car Safety">
-</div>
-      <h3 data-fa="ایمنی خودرو" data-en="Car Safety">ایمنی خودرو</h3>
-      <span data-fa="مشاهده محصولات ←" data-en="View Products →">مشاهده محصولات ←</span>
-    </button>
-  </div>
-</section>
-
-
-   
-<section class="section products-section" id="products">
-  <div class="section-heading">
-    <div>
-      <span class="section-kicker">OUR COLLECTION</span>
-      <h2>
-        <span data-fa="محصولات" data-en="Our">محصولات</span>
-        <span data-fa="منتخب" data-en="Featured Products">منتخب</span>
-      </h2>
-    </div>
-
-    <div class="filter-group">
-      <button class="filter-btn active" data-filter="همه" data-fa="همه" data-en="All">همه</button>
-      <button class="filter-btn" data-filter="لوازم جانبی" data-fa="جانبی" data-en="Accessories">جانبی</button>
-      <button class="filter-btn" data-filter="قطعات یدکی" data-fa="قطعات" data-en="Parts">قطعات</button>
-      <button class="filter-btn" data-filter="تجهیزات الکترونیکی" data-fa="الکترونیکی" data-en="Electronics">الکترونیکی</button>
-    </div>
-  </div>
-
-  <div class="product-grid" id="productGrid"></div>
-
-  <p class="empty-message" id="emptyMessage" hidden
-     data-fa="محصولی با این مشخصات پیدا نشد."
-     data-en="No products found matching your criteria.">
-    محصولی با این مشخصات پیدا نشد.
-  </p>
-</section>
-
-
-   <section class="promo">
-  <div class="promo-content">
-    <span class="section-kicker">SPECIAL OFFER</span>
-
-    <h2
-      data-fa="وقتشه به خودروی خودت<br>یه <span>ارتقای ویژه</span> بدی!"
-      data-en="It's time to give your car<br>a <span>special upgrade</span>!"
-    >
-      وقتشه به خودروی خودت<br>یه <span>ارتقای ویژه</span> بدی!
-    </h2>
-
-    <p
-      data-fa="محصولات منتخب را ببین و تجهیزات موردنیازت را پیدا کن."
-      data-en="Explore our selected products and find the accessories your car needs."
-    >
-      محصولات منتخب را ببین و تجهیزات موردنیازت را پیدا کن.
-    </p>
-
-    <a
-      href="#products"
-      class="btn btn-red"
-      data-fa="خرید محصولات <span>←</span>"
-      data-en="Shop Products <span>→</span>"
-    >
-      خرید محصولات <span>←</span>
-    </a>
-  </div>
-
-  <div class="promo-art">
-    <div class="promo-ring"></div>
-    <span>DRIVE<br>YOUR<br>DREAM.</span>
-  </div>
-</section>
-
-   <section class="section services-section" id="services">
-  <div class="section-heading">
-    <div>
-      <span class="section-kicker">WHY AUTO LUXE</span>
-      <h2 data-fa="چرا <span>ما را انتخاب کنید؟</span>"
-          data-en="Why <span>Choose Us?</span>">
-        چرا <span>ما را انتخاب کنید؟</span>
-      </h2>
-    </div>
-  </div>
-
-  <div class="service-grid">
-    <article class="service-card">
-      <span>✓</span>
-      <h3 data-fa="انتخاب مطمئن" data-en="Trusted Choice">انتخاب مطمئن</h3>
-      <p data-fa="اطلاعات محصولات برای تصمیم‌گیری بهتر در خرید."
-         data-en="Detailed product information to help you make better buying decisions.">
-        اطلاعات محصولات برای تصمیم‌گیری بهتر در خرید.
-      </p>
-    </article>
-
-    <article class="service-card">
-      <span>↗</span>
-      <h3 data-fa="تجربه خرید آسان" data-en="Easy Shopping Experience">تجربه خرید آسان</h3>
-      <p data-fa="جست‌وجو و دسته‌بندی برای پیدا کردن سریع محصولات."
-         data-en="Search and categories to help you find products quickly.">
-        جست‌وجو و دسته‌بندی برای پیدا کردن سریع محصولات.
-      </p>
-    </article>
-
-    <article class="service-card">
-      <span>♡</span>
-      <h3 data-fa="توجه به مشتری" data-en="Customer Care">توجه به مشتری</h3>
-      <p data-fa="تجربه‌ای ساده، شفاف و حرفه‌ای برای خریداران."
-         data-en="A simple, transparent, and professional shopping experience.">
-        تجربه‌ای ساده، شفاف و حرفه‌ای برای خریداران.
-      </p>
-    </article>
-  </div>
-</section>
-  </main>
-
- <footer class="footer">
-  <div class="footer-main">
-
-    <div class="footer-brand">
-      <a class="logo" href="#home">
-        <span class="logo-icon">A<span>✦</span></span>
-        <span>AUTO <b>LUXE</b><small>PREMIUM AUTO STORE</small></span>
-      </a>
-
-      <p
-        data-fa="انتخابی هوشمندانه برای کسانی که به خودروی خود اهمیت می‌دهند."
-        data-en="A smart choice for those who truly care about their cars."
-      >
-        انتخابی هوشمندانه برای کسانی که به خودروی خود اهمیت می‌دهند.
-      </p>
-    </div>
-
-    <div>
-      <h3 data-fa="دسترسی سریع" data-en="Quick Links">دسترسی سریع</h3>
-      <a href="#home" data-fa="صفحه اصلی" data-en="Home">صفحه اصلی</a>
-      <a href="#categories" data-fa="دسته‌بندی‌ها" data-en="Categories">دسته‌بندی‌ها</a>
-      <a href="#products" data-fa="محصولات" data-en="Products">محصولات</a>
-    </div>
-
-    <div>
-      <h3 data-fa="خدمات" data-en="Services">خدمات</h3>
-      <a href="#services" data-fa="مزایای خرید" data-en="Shopping Benefits">مزایای خرید</a>
-      <a href="#services" data-fa="پشتیبانی" data-en="Support">پشتیبانی</a>
-      <a href="#services" data-fa="راهنمای خرید" data-en="Shopping Guide">راهنمای خرید</a>
-    </div>
-
-    <div class="newsletter">
-      <h3 data-fa="از پیشنهادهای ما باخبر شو" data-en="Stay Updated">از پیشنهادهای ما باخبر شو</h3>
-      <p data-fa="ایمیل خود را وارد کنید." data-en="Enter your email address.">ایمیل خود را وارد کنید.</p>
-
-      <form id="newsletterForm">
-        <input
-          type="email"
-          id="emailInput"
-         placeholder="Your email"
-          data-fa-placeholder="ایمیل شما"
-          data-en-placeholder="Your email"
-          required
-        >
-        <button type="submit" data-fa="ثبت" data-en="Subscribe">ثبت</button>
-      </form>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <span
-      data-fa="© ۲۰۲۶ AUTO LUXE | پروژه نمونه‌کار"
-      data-en="© 2026 AUTO LUXE | Portfolio Project"
-    >
-      © ۲۰۲۶ AUTO LUXE | پروژه نمونه‌کار
-    </span>
-
-    <a href="#home" data-fa="بازگشت به بالا ↑" data-en="Back to Top ↑">
-      بازگشت به بالا ↑
-    </a>
-  </div>
-</footer>
-
-  <div class="overlay" id="overlay"></div>
-  <aside class="cart-drawer" id="cartDrawer">
-    <div class="drawer-header">
-      <h2>سبد خرید شما</h2>
-      <button id="closeCart" aria-label="بستن">✕</button>
-    </div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-footer">
-      <div class="cart-total"><span>مجموع:</span><strong id="cartTotal">۰ تومان</strong></div>
-      <button id="checkoutButton" class="btn btn-red checkout-btn">ثبت سفارش آزمایشی</button>
-      <small>این فروشگاه نمونه‌کار است و پرداخت واقعی ندارد.</small>
-    </div>
-  </aside>
-
-  <div class="toast" id="toast" role="status"></div>
-
-  <script src="script.js"></script>
-  
-<script>
-  window.setTimeout(function () {
-    var intro = document.getElementById("introScreen");
-
-    if (intro) {
-      intro.classList.add("intro-hidden");
-
-      window.setTimeout(function () {
-        if (intro.parentNode) {
-          intro.parentNode.removeChild(intro);
-        }
-      }, 800);
-    }
-  }, 2000);
-</script>
-
+    <header class="header">
+        <a href="#" class="logo">NOIRÉ<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#reservation" class="header-btn">BOOK A TABLE</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">AN EXTRAORDINARY DINING EXPERIENCE</p>
+
+                <h1>Where Taste Meets <span>Elegance</span></h1>
+
+                <p class="hero-description">
+                    Discover a world of exquisite flavors,
+                    timeless atmosphere and unforgettable moments.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-btn">EXPLORE MENU</a>
+                    <a href="#about" class="text-btn">DISCOVER OUR STORY</a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>EST. 2026</span>
+                <span>FINE DINING · SIGNATURE CUISINE</span>
+                <span>01 — 03</span>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-label">01 / OUR STORY</div>
+            <h2>More Than Dining.<br><span>An Art of Living.</span></h2>
+            <p>
+                At NOIRÉ, every dish tells a story.
+                Experience exceptional ingredients,
+                inspired creativity and unforgettable hospitality.
+            </p>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="section-label">02 / OUR MENU</div>
+            <h2>Signature <span>Selections</span></h2>
+
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <div class="menu-image"></div>
+                    <h3>Golden Truffle Pasta</h3>
+                    <p>Fresh pasta, black truffle and parmesan.</p>
+                    <span>$28</span>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"></div>
+                    <h3>Premium Beef Steak</h3>
+                    <p>Perfectly grilled beef with signature sauce.</p>
+                    <span>$42</span>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image"></div>
+                    <h3>Royal Chocolate Dessert</h3>
+                    <p>Rich chocolate with delicate golden touches.</p>
+                    <span>$18</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+            <p class="section-label">03 / RESERVATIONS</p>
+            <h2>Your Table <span>Awaits.</span></h2>
+            <p>Make your next evening truly unforgettable.</p>
+            <a href="#contact" class="primary-btn">RESERVE YOUR TABLE</a>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <a href="#" class="logo">NOIRÉ<span>.</span></a>
+        <p>Luxury Dining · Exceptional Moments</p>
+        <p>© 2026 NOIRÉ Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
